@@ -27,20 +27,6 @@ const ContextProvider = (props) => {
     setLoading(true);
     setShowResult(true);
 
-    // Recent promt click and show the result
-
-    // let response;
-    // if (promt !== undefined) {
-    //   response = await run(promt);
-    //   setRecentPromt(promt);
-    // } else {
-    //   setPrevPromt((prev) => [...prev, input]);
-    //   setRecentPromt(input);
-    //   response = await run(input);
-    // }
-
-    //Recent promt result only show Sidebar
-
     setRecentPromt(input);
     setPrevPromt((prev) => [...prev, input]);
     const response = await run(input);
